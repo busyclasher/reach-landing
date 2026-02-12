@@ -30,14 +30,14 @@ function App() {
       <nav className="navbar">
         <div className="container nav-container">
           <div className="logo">
-            <img src="/assets/logo.png" alt="Reach Logo" />
+            <img src="/assets/logo.png" alt="Reachly Logo" />
           </div>
 
           <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <a href="#how-it-works">How It Works</a>
             <a href="#features">Features</a>
             <a href="#story">Our Story</a>
-            <a href="#cta" className="nav-cta">Get Started</a>
+            <a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer" className="nav-cta">Join Channel</a>
           </div>
 
           <button
@@ -85,7 +85,7 @@ function App() {
             </button>
           </div>
 
-          <a href="#telegram" className="telegram-link fade-in">
+          <a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer" className="telegram-link fade-in">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.249 15.751" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -140,7 +140,7 @@ function App() {
       {/* How It Works */}
       <section id="how-it-works" className="how-it-works">
         <div className="container">
-          <h2 className="section-title fade-in">How Reach Works</h2>
+          <h2 className="section-title fade-in">How Reachly Works</h2>
 
           <div className="tab-buttons fade-in">
             <button
@@ -238,7 +238,7 @@ function App() {
               and perfecting a platform that would <strong>democratize access to content creation collaborations</strong>.
             </p>
             <p>
-              Today, Reach is <strong>Singapore's first and largest transparent influencer marketplace</strong> —
+              Today, Reachly is <strong>Singapore's first and largest transparent influencer marketplace</strong> —
               a place where authentic creators connect with brands that value genuine partnerships, without the barriers
               and excessive costs that have plagued the industry for too long.
             </p>
@@ -294,28 +294,6 @@ function App() {
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="social-proof">
-        <div className="container">
-          <div className="stats-grid fade-in">
-            <div className="stat-card glass-card">
-              <div className="stat-number">500+</div>
-              <div className="stat-label">Active Creators</div>
-            </div>
-
-            <div className="stat-card glass-card">
-              <div className="stat-number">150+</div>
-              <div className="stat-label">Brands Partnered</div>
-            </div>
-
-            <div className="stat-card glass-card">
-              <div className="stat-number">1,000+</div>
-              <div className="stat-label">Successful Campaigns</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section id="cta" className="final-cta">
         <div className="cta-background">
@@ -344,7 +322,7 @@ function App() {
           <div className="footer-grid">
             <div className="footer-section">
               <div className="footer-logo">
-                <img src="/assets/logo.png" alt="Reach Logo" />
+                <img src="/assets/logo.png" alt="Reachly Logo" />
               </div>
               <p>Singapore's first and largest transparent influencer marketplace</p>
             </div>
@@ -355,7 +333,7 @@ function App() {
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#story">Our Story</a></li>
-                <li><a href="#cta">Get Started</a></li>
+                <li><a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer">Join Channel</a></li>
               </ul>
             </div>
 
@@ -387,7 +365,7 @@ function App() {
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
                 </a>
-                <a href="#telegram" aria-label="Telegram">
+                <a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.84 8.673c-.139.623-.499.778-1.012.485l-2.796-2.06-1.349 1.299c-.149.149-.273.273-.562.273l.199-2.835 5.158-4.661c.224-.199-.05-.311-.348-.112l-6.375 4.014-2.748-.864c-.598-.187-.61-.598.126-.889l10.74-4.145c.499-.187.936.112.773.889z" />
                   </svg>
@@ -397,7 +375,7 @@ function App() {
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; 2026 Reach - Singapore's Transparent Influencer Marketplace. All rights reserved.</p>
+            <p>&copy; 2026 Reachly - Singapore's Transparent Influencer Marketplace. All rights reserved.</p>
           </div>
         </div>
       </footer>
