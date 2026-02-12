@@ -59,38 +59,47 @@ function App() {
           <div className="gradient-orb orb-3"></div>
         </div>
 
-        <div className="container hero-content">
-          <h1 className="hero-title fade-in">
-            Democratizing Content Creation <span className="gradient-text">Collaborations</span>
-          </h1>
+        <div className="container hero-split">
+          <div className="hero-content">
+            <h1 className="hero-title fade-in">
+              Democratizing Content Creation <span className="gradient-text">Collaborations</span>
+            </h1>
 
-          <p className="hero-subtitle fade-in">
-            Singapore's first and largest transparent influencer marketplace.<br />
-            Connecting authentic creators with brands that value genuine partnerships.
-          </p>
+            <p className="hero-subtitle fade-in">
+              Singapore's first and largest transparent influencer marketplace.<br />
+              Connecting authentic creators with brands that value genuine partnerships.
+            </p>
 
-          <div className="hero-ctas fade-in">
-            <button className="btn btn-primary btn-large">
-              <span>I'm a Creator</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <div className="hero-ctas fade-in">
+              <button className="btn btn-primary btn-large">
+                <span>I'm a Creator</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+
+              <button className="btn btn-primary btn-large">
+                <span>I'm a Brand</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
+
+            <a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer" className="telegram-link fade-in">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.249 15.751" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </button>
-
-            <button className="btn btn-primary btn-large">
-              <span>I'm a Brand</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
+              Join Our Creator Community on Telegram
+            </a>
           </div>
 
-          <a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer" className="telegram-link fade-in">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.249 15.751" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            Join Our Creator Community on Telegram
-          </a>
+          <div className="hero-images fade-in">
+            <div className="hero-image-stack">
+              <img src="/assets/creator-1.jpg" alt="Content creator going live" className="hero-img hero-img-1" />
+              <img src="/assets/creator-2.jpg" alt="Creator engaging with audience" className="hero-img hero-img-2" />
+            </div>
+          </div>
         </div>
       </section>
 
