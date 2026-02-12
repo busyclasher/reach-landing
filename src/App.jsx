@@ -4,6 +4,20 @@ import './App.css'
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeTab, setActiveTab] = useState('creator')
+  const [rotatingWordIndex, setRotatingWordIndex] = useState(0)
+  const [wordFading, setWordFading] = useState(false)
+  const rotatingWords = ['transparent', 'seamless', 'dynamic']
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordFading(true)
+      setTimeout(() => {
+        setRotatingWordIndex(prev => (prev + 1) % rotatingWords.length)
+        setWordFading(false)
+      }, 400)
+    }, 2500)
+    return () => clearInterval(interval)
+  }, [])
 
   useEffect(() => {
     const observerOptions = {
@@ -62,36 +76,21 @@ function App() {
         <div className="container hero-split">
           <div className="hero-content">
             <h1 className="hero-title fade-in">
-              Democratizing Content Creation <span className="gradient-text">Collaborations</span>
+              Singapore's First Transparent <span className="accent-text">Creator Marketplace</span>
             </h1>
 
             <p className="hero-subtitle fade-in">
-              Singapore's first and largest transparent influencer marketplace.<br />
-              Connecting authentic creators with brands that value genuine partnerships.
+              Connect authentic creators with brands — <span className={`rotating-word ${wordFading ? 'fading' : ''}`}>{rotatingWords[rotatingWordIndex]}</span>, without barriers.
             </p>
 
             <div className="hero-ctas fade-in">
-              <button className="btn btn-primary btn-large">
-                <span>I'm a Creator</span>
+              <a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer" className="btn btn-accent btn-large">
+                Join Channel
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </button>
-
-              <button className="btn btn-primary btn-large">
-                <span>I'm a Brand</span>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
+              </a>
             </div>
-
-            <a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer" className="telegram-link fade-in">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.249 15.751" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              Join Our Creator Community on Telegram
-            </a>
           </div>
 
           <div className="hero-images fade-in">
@@ -106,7 +105,7 @@ function App() {
       {/* Pain Points Section */}
       <section className="pain-points">
         <div className="container">
-          <h2 className="section-title fade-in">We Understand Your Challenges</h2>
+          <h2 className="section-title fade-in">Democratizing Content Collaborations</h2>
 
           <div className="pain-grid">
             <div className="pain-card glass-card fade-in">
@@ -149,7 +148,8 @@ function App() {
       {/* How It Works */}
       <section id="how-it-works" className="how-it-works">
         <div className="container">
-          <h2 className="section-title fade-in">How Reachly Works</h2>
+          <h2 className="section-title fade-in">How Does It Work</h2>
+          <p className="section-subtitle fade-in">The process is seamless!</p>
 
           <div className="tab-buttons fade-in">
             <button
@@ -247,9 +247,9 @@ function App() {
               and perfecting a platform that would <strong>democratize access to content creation collaborations</strong>.
             </p>
             <p>
-              Today, Reachly is <strong>Singapore's first and largest transparent influencer marketplace</strong> —
-              a place where authentic creators connect with brands that value genuine partnerships, without the barriers
-              and excessive costs that have plagued the industry for too long.
+              Today, Reachly is <strong>Singapore's  transparent creator marketplace</strong> —
+              a space where authentic creators connect directly with brands that value genuine partnerships,
+              without the barriers and excessive costs that have held the industry back.
             </p>
             <div className="story-cta">
               <p className="mission-text">Join us in building a more accessible, transparent, and fair creator economy.</p>
@@ -315,12 +315,12 @@ function App() {
           <p className="fade-in">Join Singapore's most transparent influencer marketplace today</p>
 
           <div className="cta-buttons fade-in">
-            <button className="btn btn-white btn-large">
-              Start as a Creator
-            </button>
-            <button className="btn btn-outline btn-large">
-              I'm a Brand
-            </button>
+            <a href="https://t.me/ReachlyOfficialBot" target="_blank" rel="noopener noreferrer" className="btn btn-accent btn-large">
+              Get Started on Telegram
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
