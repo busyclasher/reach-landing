@@ -38,7 +38,7 @@ function App() {
             <span className="logo-text">reachly.io</span>
           </div>
 
-          <a href="#waitlist" className="btn-join-waitlist">Join Waitlist</a>
+          <a href="https://t.me/+K_ql6MOIm40zY2I1" target="_blank" rel="noopener noreferrer" className="btn-join-waitlist">Join Waitlist</a>
         </div>
       </nav>
 
@@ -471,7 +471,7 @@ function App() {
           <p>Whether you're a creator looking for your passion or a brand in search of
             the perfect match, Reachly is made for you.</p>
           <div className="cta-buttons">
-            <a href="#" className="btn btn-cta-primary">Join the Waitlist</a>
+            <a href="https://t.me/+K_ql6MOIm40zY2I1" target="_blank" rel="noopener noreferrer" className="btn btn-cta-primary">Join the Waitlist</a>
           </div>
         </div>
       </section>
